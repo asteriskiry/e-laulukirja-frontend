@@ -6,16 +6,31 @@ class SonglistComponent extends Component {
     super(props);
     this.state = {
       songs: [],
+      search: ""
     };
+    this.handleChange = this.handleChange.bind(this)
   }
+
+
+  handleChange(event){
+    this.setState({search: event.target.value})
+}
   render() {
-    const songs = this.state.songs.map((song, key) => (
-      <li key={song.number}><a href="#">{song.name}</a></li>
-    ));
+    var filtered = this.state.songs.filter(song => this.state.search.toLowerCase() === song.name.substring(0, this.state.search.length).toLowerCase())
+   
+   
+    const songs = filtered.map((song, key) => (
+    <li key={song.number}><a href="#">{song.name}</a></li>
+     ));
+    
+    
     return (
-      <ul>
-        {songs}
-      </ul>
+      <div id="main">
+        <input onChange={this.handleChange}></input>
+        <ul>
+          {songs}
+        </ul>
+      </div>
         )
   }
   async componentDidMount() {
