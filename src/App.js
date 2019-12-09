@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeView from './views/HomeView.js';
 import LoginView from './views/LoginView.js';
 import SongView from './views/SongView.js';
+import './app.css'
+
 
 function App() {
   return (
