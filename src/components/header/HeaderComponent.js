@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import  logo from './asteriski-logo.png'
 
 class HeaderComponent extends Component {
+
   render() {
     return (
-      <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand href="/">E-laulukirja</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar id="header" variant="dark" expand="lg" >
+        <Navbar.Brand id="header" href="/"><img id="logo" src={logo} />E-laulukirja</Navbar.Brand>
+        <Navbar.Toggle id="button" aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="header">
           <Nav className="ml-auto">
-            <Nav.Link href="/">Koti</Nav.Link>
-            <Nav.Link href="/login">Kirjaudu sisään</Nav.Link>
+            <Nav.Link style={{color: "White"}} href="/">Koti</Nav.Link>
+            <Nav.Link style={{color : "white"}} href="/login">Kirjaudu sisään</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

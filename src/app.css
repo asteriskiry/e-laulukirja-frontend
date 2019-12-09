@@ -1,0 +1,22 @@
+*{
+    list-style-type: none;
+   
+    font-family: 'Montserrat', 'sans-serif';
+    /* color: #35b233; */
+}
+
+#logo{
+    width: 1.8em;
+    height: 1.8em;
+    background-color: transparent;
+}
+#header{
+    background-color: black;
+    color: #35b233  ;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+

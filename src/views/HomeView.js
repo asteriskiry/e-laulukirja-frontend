@@ -7,7 +7,7 @@ class HomeView extends Component {
     return (
       <MainComponent>
         
-        <h1>E-laulukirja</h1>
+        
         <SonglistComponent />
       </MainComponent>
     );
