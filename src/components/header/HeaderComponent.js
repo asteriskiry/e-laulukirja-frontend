@@ -7,7 +7,7 @@ class HeaderComponent extends Component {
   render() {
     return (
       <Navbar id="header" variant="dark" expand="lg" >
-        <Navbar.Brand id="header" href="/"><img id="logo" src={logo} />E-laulukirja</Navbar.Brand>
+       <Navbar.Brand id="header" href="/"><img id="logo" src={logo} /><b>E-laulukirja</b></Navbar.Brand>
         <Navbar.Toggle id="button" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="header">
           <Nav className="ml-auto">
