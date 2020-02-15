@@ -15,19 +15,28 @@
     color: #35b233  ;
 }
 
+#link {
+    color: #35b233;
+}
+
 #toprow{
     background-color: #35b233;
     color: white;
     height: 2.25em;
 }
 
+#indent{
+    text-indent: 5em;
+    
+}
 #tablerow{
-    color: #35b233;
+    
+    color: #35b235;
     border-bottom: 0.05em solid gray;
     
 }
 
-#songlist{
+#songlist, #song{
     width: 85%;
     margin-left: 7.5%;
     margin-right: 7.5%;

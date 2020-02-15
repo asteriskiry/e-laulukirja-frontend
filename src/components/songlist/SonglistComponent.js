@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link} from 'react-router-dom'
+
 
 class SonglistComponent extends Component {
   constructor(props) {
@@ -15,29 +17,37 @@ class SonglistComponent extends Component {
   handleChange(event){
     this.setState({search: event.target.value})
 }
+
+songById(id){
+  const song = this.state.songs.find(song => song.number === id)
+  return song
+}
+
   render() {
     var filtered = this.state.songs.filter(song => this.state.search.toLowerCase() === song.title.substring(0, this.state.search.length).toLowerCase())
    
-   
-    const songs = <table id="songlist">
-      <tr><th colSpan="2"><input id="search" placeholder="Etsi..." onChange={this.handleChange}></input></th></tr>
-      <tr id="toprow"><th>Laulu</th><th>Numero</th></tr>{filtered.map((song, key) => (
-      <tr id="tablerow" key={song.title}><th>{song.title}</th><th>{song.number}</th></tr>
-     ))}</table>
-    
-    
     return (
-      <div id="main">
+      <div>
         
+          <div id="main">
         
-        {songs}
+            <table id="songlist">
+              <tbody>
+              <tr><th colSpan="2"><input id="search" placeholder="Etsi..." onChange={this.handleChange}></input></th></tr>
+              <tr id="toprow"><th>Laulu</th><th>Numero</th></tr>{filtered.map((song) => (
+              <tr id="tablerow" key={song.title}><th><Link id="link" to={`/song/${song.number}`}>{song.title}</Link></th><th>{song.number}</th></tr>
+              ))}
+              </tbody>
+            </table>
         
+          </div>         
       </div>
-        )
+      
+      )
   }
   async componentDidMount() {
     try {
-      let songs = await axios.get('laulukirjaV3.json', {
+      let songs = await axios.get('/laulukirjaV3.json', {
         headers: {
           'Content-Type': 'application/json',
         },
