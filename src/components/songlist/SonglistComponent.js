@@ -24,7 +24,8 @@ songById(id){
 }
 
   render() {
-    var filtered = this.state.songs.filter(song => this.state.search.toLowerCase() === song.title.substring(0, this.state.search.length).toLowerCase())
+    var filtered = this.state.songs.filter(song => this.state.search.toLowerCase() === song.title.substring(0, this.state.search.length).toLowerCase() 
+    || this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
    
     return (
       <div>
