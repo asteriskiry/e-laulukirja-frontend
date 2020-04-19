@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import MainComponent from '../components/main/MainComponent.js';
 
+
+//Ehkä tähän vielä joskus tulee oikeaa sisältöä, nyt ei kuitenkaan käytössä
 class LoginView extends Component {
   render() {
     return (

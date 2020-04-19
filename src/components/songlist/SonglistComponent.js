@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link} from 'react-router-dom'
 
-
+//Sivun oletusnäkymägi
 class SonglistComponent extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +13,7 @@ class SonglistComponent extends Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-
+//Hakukentän muutoksenkäsittely
   handleChange(event){
     this.setState({search: event.target.value})
 }
@@ -24,7 +24,9 @@ songById(id){
 }
 
   render() {
-    var filtered = this.state.songs.filter(song => this.state.search.toLowerCase() === song.title.substring(0, this.state.search.length).toLowerCase())
+    //Rajataan laululista haun perusteella
+    var filtered = this.state.songs.filter(song => this.state.search.toLowerCase() === song.title.substring(0, this.state.search.length).toLowerCase() 
+    || this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
    
     return (
       <div>
@@ -45,7 +47,10 @@ songById(id){
       
       )
   }
+
+  
   async componentDidMount() {
+    //Noudetaan laulukirjatiedosto
     try {
       let songs = await axios.get('/laulukirjaV3.json', {
         headers: {
@@ -54,6 +59,7 @@ songById(id){
       });
 
       let songdata = songs.data
+      //Lajitellaan laulut numeron perusteella
       let sortedSongs= songdata.sort((a, b) => (a.number > b.number) ? 1 : -1)
 
       this.setState({

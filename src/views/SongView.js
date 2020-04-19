@@ -12,7 +12,7 @@ class SongView extends Component {
     }
   }
   
-    
+  //Haetaan laulukirja  
     async componentDidMount() {
       try {
         let songs = await axios.get('/laulukirjaV3.json', {
@@ -22,6 +22,7 @@ class SongView extends Component {
         });
   
         let songdata = songs.data
+        //Haetaan oikea laulu
         let song = songdata.find(song => song.number === this.props.match.params.number)
     
         this.setState({
@@ -37,6 +38,7 @@ class SongView extends Component {
   }
   render() {
 
+    //Palautetaan tyhjä sivu sillä aikaa, kun laulu ei ole latautunut
     if(this.state.song === null){
       return(
         <MainComponent>
@@ -44,7 +46,7 @@ class SongView extends Component {
         </MainComponent>
       )
     }
-
+    //Laitetaan laulun sanat listaan
     var lyrics = this.state.song.lyrics.map((lyric, index) => {
       if(lyric.substring(0,2) === ">>"){
         return <li key={index} id="indent"><ReactMarkdown source={lyric} /></li>
