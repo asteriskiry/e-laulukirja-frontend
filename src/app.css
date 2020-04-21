@@ -15,8 +15,13 @@
     color: #35b233  ;
 }
 
-#link {
+.link {
     color: #35b233;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #35b235;
 }
 
 #toprow{
@@ -29,7 +34,7 @@
     text-indent: 5em;
     
 }
-#tablerow{
+.tablerow{
     
     color: #35b235;
     border-bottom: 0.05em solid gray;
@@ -55,6 +60,11 @@
     align-content: center;
     justify-content: center;
     
+}
+.toprowcell:hover{
+    background-color: #008000;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 

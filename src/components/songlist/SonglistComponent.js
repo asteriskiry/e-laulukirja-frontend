@@ -8,7 +8,8 @@ class SonglistComponent extends Component {
     super(props);
     this.state = {
       songs: [],
-      search: ""
+      search: "",
+      sortBy: false
     };
     this.handleChange = this.handleChange.bind(this)
   }
@@ -23,11 +24,22 @@ songById(id){
   return song
 }
 
+//Laululistan lajittelu
+sortSongs(songs){
+  let sortedSongs = null
+  //Jos sortBy totta, lajitellaan aakkosjärjestyksessä, jos ei niin numerojärjestyksessä
+  this.state.sortBy === true ?  sortedSongs = songs.sort((a, b) => (a.title.charCodeAt(0) > b.title.charCodeAt(0) ? 1 : -1)) :
+   sortedSongs = songs.sort((a, b) => (a.number > b.number ? 1 : -1))
+  return sortedSongs
+}
+
   render() {
     //Rajataan laululista haun perusteella
-    var filtered = this.state.songs.filter(song => this.state.search.toLowerCase() === song.title.substring(0, this.state.search.length).toLowerCase() 
+    var filtered = this.state.songs.filter(song => song.title.toLowerCase().includes(this.state.search.toLowerCase())
     || this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
-   
+    let songs = this.sortSongs(filtered)
+    
+
     return (
       <div>
         
@@ -36,8 +48,9 @@ songById(id){
             <table id="songlist">
               <tbody>
               <tr><th colSpan="2"><input id="search" placeholder="Etsi..." onChange={this.handleChange}></input></th></tr>
-              <tr id="toprow"><th>Laulu</th><th>Numero</th></tr>{filtered.map((song) => (
-              <tr id="tablerow" key={song.title}><th><Link id="link" to={`/song/${song.number}`}>{song.title}</Link></th><th>{song.number}</th></tr>
+              <tr id="toprow"><th class="toprowcell" onClick={() => this.setState({sortBy : true})}>Laulu</th>
+              <th class="toprowcell" onClick={() => this.setState({sortBy : false })}>Numero</th></tr>{songs.map((song) => (
+              <tr class="tablerow" key={song.title}><th><Link class="link" to={`/song/${song.number}`}>{song.title}</Link></th><th>{song.number}</th></tr>
               ))}
               </tbody>
             </table>
@@ -60,12 +73,12 @@ songById(id){
 
       let songdata = songs.data
       //Lajitellaan laulut numeron perusteella
-      let sortedSongs= songdata.sort((a, b) => (a.number > b.number) ? 1 : -1)
+   
 
       this.setState({
         ...this.state,
         ...{
-          songs: sortedSongs,
+          songs: songdata,
         },
       });
     } catch (e) {
