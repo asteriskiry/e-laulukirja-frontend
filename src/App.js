@@ -14,14 +14,9 @@ function App() {
         <Switch>
           <Route path="/login" component={LoginView} />
           <Route path="/song/:number" component={SongView} />
-          
           <Route path="/" component={HomeView} />
-           
-          
         </Switch>
       </div>
-
-      
     </Router>
   );
 }
