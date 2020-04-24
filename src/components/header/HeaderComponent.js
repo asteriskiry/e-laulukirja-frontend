@@ -8,7 +8,7 @@ class HeaderComponent extends Component {
     return (
       <Navbar id="header" variant="dark" expand="lg" >
 
-       <Navbar.Brand id="header" href="/"><img id="logo" src={logo} /><b>E-laulukirja</b></Navbar.Brand>
+       <Navbar.Brand id="header" href="/"><img id="logo" alt="Asteriski logo" src={logo} /><b>E-laulukirja</b></Navbar.Brand>
         
         <Navbar.Collapse id="header">
         </Navbar.Collapse>
