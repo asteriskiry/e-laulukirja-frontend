@@ -6,8 +6,6 @@ class HomeView extends Component {
   render() {
     return (
       <MainComponent>
-        
-        
         <SonglistComponent />
       </MainComponent>
     );

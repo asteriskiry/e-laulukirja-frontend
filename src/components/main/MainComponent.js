@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from '../header/HeaderComponent.js';
+import BannerComponent from '../banner/BannerComponent.js'
 
 class MainComponent extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Container>{this.props.children}</Container>
+          <BannerComponent />
+          <Container id="container">{this.props.children}</Container>
       </div>
     );
   }
