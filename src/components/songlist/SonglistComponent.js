@@ -38,30 +38,28 @@ sortSongs(songs){
     var filtered = this.state.songs.filter(song => song.title.toLowerCase().includes(this.state.search.toLowerCase())
     || this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
     let songs = this.sortSongs(filtered)
-    
 
     return (
-      <div>
-        
-          <div id="main">
-        
-            <table id="songlist">
-              <tbody>
-              <tr><th colSpan="2"><input id="search" placeholder="Etsi..." onChange={this.handleChange}></input></th></tr>
-              <tr id="toprow"><th class="toprowcell" onClick={() => this.setState({sortBy : true})}>Laulu</th>
-              <th class="toprowcell" onClick={() => this.setState({sortBy : false })}>Numero</th></tr>{songs.map((song) => (
-              <tr class="tablerow" key={song.title}><th><Link class="link" to={`/song/${song.number}`}>{song.title}</Link></th><th>{song.number}</th></tr>
-              ))}
-              </tbody>
-            </table>
-        
-          </div>         
+      <div id="main">
+          <div>
+            <div id="songlist">
+              <div id="songlist-container">
+                <div><div colSpan="2"><input id="search" placeholder="Etsi..." onChange={this.handleChange}></input></div></div>
+                <div id="toprow"><div id="toprow-left" className="toprowcell" onClick={() => this.setState({sortBy : true})}>Laulu</div>
+                  <div id="toprow-right" className="toprowcell" onClick={() => this.setState({sortBy : false })}>Numero</div>
+                </div>
+                {songs.map((song) => (
+                <Link to={`/song/${song.number}`} className="tablerow" key={song.title}>
+                  <div className="songtitle"><div className="link">{song.title}</div></div>
+                  <div className="songnumber">{song.number}</div>
+                </Link>))}
+              </div>
+            </div>
+          </div>
       </div>
-      
       )
   }
 
-  
   async componentDidMount() {
     //Noudetaan laulukirjatiedosto
     try {
@@ -73,8 +71,6 @@ sortSongs(songs){
 
       let songdata = songs.data
       //Lajitellaan laulut numeron perusteella
-   
-
       this.setState({
         ...this.state,
         ...{

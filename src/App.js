@@ -6,7 +6,6 @@ import LoginView from './views/LoginView.js';
 import SongView from './views/SongView.js';
 import './app.css'
 
-
 function App() {
   return (
     <Router>
