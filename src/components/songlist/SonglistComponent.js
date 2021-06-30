@@ -8,16 +8,23 @@ class SonglistComponent extends Component {
     super(props);
     this.state = {
       songs: [],
+      categories: [],
       search: "",
-      sortBy: false
+      sortBy: false,
+      filter: "Kaikki"
     };
     this.handleChange = this.handleChange.bind(this)
+    this.handleFilter = this.handleFilter.bind(this)
   }
 
 //Hakukentän muutoksenkäsittely
   handleChange(event){
     this.setState({search: event.target.value})
 }
+
+  handleFilter(event){
+    this.setState({filter: event.target.value})
+  }
 
 songById(id){
   const song = this.state.songs.find(song => song.number === id)
@@ -33,10 +40,19 @@ sortSongs(songs){
   return sortedSongs
 }
 
+  filterSongs(){
+    let filtered = this.state.songs.filter(song => song.title.toLowerCase().includes(this.state.search.toLowerCase()) ||
+                                                   this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
+    if (this.state.filter !== "Kaikki"){
+      let categoryNumber = this.state.categories.find(category => category.category === this.state.filter).number
+      filtered = filtered.filter(song => song.number.substring(0,1) === categoryNumber)
+    }
+    return filtered
+  }
+
   render() {
     //Rajataan laululista haun perusteella
-    var filtered = this.state.songs.filter(song => song.title.toLowerCase().includes(this.state.search.toLowerCase())
-    || this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
+    var filtered = this.filterSongs()
     let songs = this.sortSongs(filtered)
 
     return (
@@ -44,7 +60,14 @@ sortSongs(songs){
           <div>
             <div id="songlist">
               <div id="songlist-container">
-                <div><div colSpan="2"><input id="search" placeholder="Etsi..." onChange={this.handleChange}></input></div></div>
+                <div id="filter-search-row">
+                  <select id="filter-input" value={this.state.filter} onChange={this.handleFilter}>
+                    <option>Kaikki</option>
+                    {this.state.categories.map((category) =>(
+                      <option key={category.number}>{category.category}</option>
+                  ))}</select>
+                  <input id="search" placeholder="Etsi..." onChange={this.handleChange}></input>
+                </div>
                 <div id="toprow"><div id="toprow-left" className="toprowcell" onClick={() => this.setState({sortBy : true})}>Laulu</div>
                   <div id="toprow-right" className="toprowcell" onClick={() => this.setState({sortBy : false })}>Numero</div>
                 </div>
@@ -69,12 +92,20 @@ sortSongs(songs){
         },
       });
 
+      let categories = await axios.get('/kategoriat.json', {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
       let songdata = songs.data
+      let categorydata = categories.data
       //Lajitellaan laulut numeron perusteella
       this.setState({
         ...this.state,
         ...{
           songs: songdata,
+          categories: categorydata
         },
       });
     } catch (e) {

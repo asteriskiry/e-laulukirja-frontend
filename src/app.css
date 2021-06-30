@@ -135,11 +135,10 @@
 #song {
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #search {
-    width: 100%;
+    width: 80%;
     border: 0.2em solid lightgray;
     border-radius: 5px;
     height: 2.5em;
@@ -186,6 +185,19 @@
     font-size: 46px;
     font-weight: bold;
     font-family: 'Poppins',sans-serif;
+}
+
+#filter-input {
+    width: 15%;
+    border: 0.2em solid lightgray;
+    border-radius: 5px;
+    height: 2.5em;
+}
+
+#filter-search-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
