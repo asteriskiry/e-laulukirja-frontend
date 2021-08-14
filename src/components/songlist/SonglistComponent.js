@@ -66,7 +66,10 @@ sortSongs(songs){
                     {this.state.categories.map((category) =>(
                       <option key={category.number}>{category.category}</option>
                   ))}</select>
-                  <input id="search" placeholder="Etsi..." onChange={this.handleChange}></input>
+                  <div id="search-container">
+                    <input id="search" value={this.search} required={true} onChange={this.handleChange}></input>
+                    <p id="search-placeholder">Hae laulua</p>
+                  </div>
                 </div>
                 <div id="toprow"><div id="toprow-left" className="toprowcell" onClick={() => this.setState({sortBy : true})}>Laulu</div>
                   <div id="toprow-right" className="toprowcell" onClick={() => this.setState({sortBy : false })}>Numero</div>
