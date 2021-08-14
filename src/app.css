@@ -3,12 +3,38 @@
     font-family: 'Montserrat', 'sans-serif';
 }
 
+@media only screen and (min-width: 750px) {
+    #song {
+        width: 50%;
+    }
+
+    #search-container {
+        width: 84%;
+    }
+
+    #filter-input {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #song {
+        width: 100%;
+    }
+
+    #search-container {
+        width: 72%;
+    }
+
+    #filter-input {
+        width: 26%;
+    }
+}
+
 #logo{
     width: 2.3em;
     height: 2.3em;
     background-color: transparent;
-    margin-top: auto;
-    margin-bottom: auto;
     transition: 0.5s;
 }
 
@@ -22,8 +48,6 @@
     flex-direction: column;
     text-align: left;
     color: #35b233;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 #header-title, #header-subtitle {
@@ -40,7 +64,6 @@
 }
 
 #header-subtitle {
-    margin-left: 0.2em;
     color: white;
     font-size: 0.8em;
     margin-left: 1em;
@@ -126,8 +149,11 @@
     margin-top: 3em;
 }
 
-#songlist, #song {
+#songlist {
     width: 100%;
+}
+
+#songlist, #song {
     margin-left: auto;
     margin-right: auto;
 }
@@ -138,11 +164,35 @@
 }
 
 #search {
-    width: 80%;
+    width: 100%;
     border: 0.2em solid lightgray;
     border-radius: 5px;
     height: 2.5em;
     margin-bottom: 1em;
+}
+
+#search-placeholder {
+    position: absolute;
+    top:  0.6em;
+    left: 0.8em;
+    transition: ease-in-out 0.2s;
+    pointer-events: none;
+}
+
+#search:focus, #filter-input:focus {
+    border: 0.2em solid #35b233;
+    outline: none;
+}
+
+#search:focus ~ #search-placeholder, #search:not(:focus):valid ~ #search-placeholder{
+    top: -0.6em;
+    left: 0.8em;
+    background-color: white;
+    padding: 0 5px;
+}
+
+#search-container {
+    position: relative;
 }
 
 #main {
@@ -188,7 +238,6 @@
 }
 
 #filter-input {
-    width: 15%;
     border: 0.2em solid lightgray;
     border-radius: 5px;
     height: 2.5em;
