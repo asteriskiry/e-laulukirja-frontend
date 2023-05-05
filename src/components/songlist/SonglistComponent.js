@@ -36,7 +36,7 @@ sortSongs(songs){
   let sortedSongs = null
   //Jos sortBy totta, lajitellaan aakkosjärjestyksessä, jos ei niin numerojärjestyksessä
   this.state.sortBy === true ?  sortedSongs = songs.sort((a, b) => (a.title.charCodeAt(0) > b.title.charCodeAt(0) ? 1 : -1)) :
-   sortedSongs = songs.sort((a, b) => (a.number > b.number ? 1 : -1))
+   sortedSongs = songs.sort((a, b) => (parseInt(a.number) > parseInt(b.number) ? 1 : -1))
   return sortedSongs
 }
 
@@ -45,7 +45,7 @@ sortSongs(songs){
                                                    this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
     if (this.state.filter !== "Kaikki"){
       let categoryNumber = this.state.categories.find(category => category.category === this.state.filter).number
-      filtered = filtered.filter(song => song.number.substring(0,1) === categoryNumber)
+      filtered = filtered.filter(song => song.number.length == 4 ? song.number.substring(0,2) === categoryNumber : song.number.substring(0,1) === categoryNumber)
     }
     return filtered
   }
@@ -89,7 +89,7 @@ sortSongs(songs){
   async componentDidMount() {
     //Noudetaan laulukirjatiedosto
     try {
-      let songs = await axios.get('/laulukirjaV3.json', {
+      let songs = await axios.get('/laulukirjaV4_2.json', {
         headers: {
           'Content-Type': 'application/json',
         },

@@ -15,7 +15,7 @@ class SongView extends Component {
   //Haetaan laulukirja
     async componentDidMount() {
       try {
-        let songs = await axios.get('/laulukirjaV3.json', {
+        let songs = await axios.get('/laulukirjaV4_2.json', {
           headers: {
             'Content-Type': 'application/json',
           },
@@ -57,7 +57,7 @@ class SongView extends Component {
         <MainComponent>
           <div id="song">
             <h1>{this.state.song.number} - {this.state.song.title}</h1>
-            <div><i><ul>{this.state.song.metadata.map(meta => (<li key={meta}>{meta}</li>))}</ul></i></div>
+            <div><i><ul>{this.state.song.metadata ? this.state.song.metadata.map(meta => (<li key={meta}>{meta}</li>)): ''}</ul></i></div>
             <ul>
               {lyrics}
             </ul>

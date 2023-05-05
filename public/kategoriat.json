@@ -1,6 +1,6 @@
 [{
    "number": "1",
-   "category": "Riski"
+   "category": "Riskimieliset"
 },
 {
   "number": "2",
@@ -8,25 +8,32 @@
 },
 {
   "number": "3",
-  "category": "Poksahtavat"
-},
-{
-  "number": "4",
   "category": "Jouluisat"
 },
 {
+  "number": "4",
+  "category": "Poksahtavat"
+},
+{
   "number": "5",
-  "category": "Sitsi"
+  "category": "Pehmoiset"
 },
 {
   "number": "6",
-  "category": "Vaaleanpunaiset"
+  "category": "Sitsahtavat"
 },
 {
   "number": "7",
-  "category": "Humalaiset"
+  "category": "Nestemäiset"
 },
 {
   "number": "8",
-  "category": "Härskiintyneet ja häröt"
+  "category": "Härskiintyneet"
+},
+{
+  "number": "9",
+  "category": "Riskialttiit"
+},{
+  "number": "10",
+  "category": "Sekavaiset"
 }]
