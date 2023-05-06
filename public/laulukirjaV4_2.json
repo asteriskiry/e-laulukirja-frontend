@@ -43,6 +43,7 @@
             "(säv. Tonttujen jouluyö)"
         ],
         "lyrics": [
+            "1,0,1,0",
             "10101,0,",
             "1,",
             "0,",
@@ -64,6 +65,7 @@
         "title": "1,0"
     },
     {
+        "metadata":["(Säv. Volga)"],
         "lyrics": [
             "Absinth",
             "vihreä kuolema",
@@ -203,6 +205,7 @@
         "title": "Ankronikka"
     },
     {
+        "metadata": ["(Säv. Terve teille lintuset)"],
         "lyrics": [
             "Lauletaanpas vedestä,",
             "jota aina riittää.",
@@ -271,13 +274,13 @@
             "&nbsp;",
             "Keitä ne on, ne asteriskit,",
             "&nbsp;",
-            "sellaiset asteriskimiehet,",
+            "sellaiset riskimiehet,",
             "&nbsp;",
             "joita koko yliopisto arvostaa?",
             "&nbsp;",
             "Keitä ne on, ne asteriskit,",
             "&nbsp;",
-            "sellaiset asteriskinaiset,",
+            "sellaiset riskinaiset,",
             "&nbsp;",
             "jotka tosityöstä palkintonsa saa?",
             "&nbsp;",
@@ -297,13 +300,13 @@
             "&nbsp;",
             "Keitä ne on, ne asteriskit,",
             "&nbsp;",
-            "sellaiset asteriskinaiset,",
+            "sellaiset riskinaiset,",
             "&nbsp;",
             "jotka tosipaikan tullen koodaavat?",
             "&nbsp;",
             "Keitä ne on, ne asteriskit,",
             "&nbsp;",
-            "sellaiset asteriskimiehet,",
+            "sellaiset riskimiehet,",
             "&nbsp;",
             "jotka rahaa tukilautakunnalta kerjäävät?",
             "&nbsp;",
@@ -315,13 +318,13 @@
             "&nbsp;",
             "Keitä ne on, ne asteriskit,",
             "&nbsp;",
-            "Agoran asteriskinaiset,",
+            "Agoran riskinaiset,",
             "&nbsp;",
             "jotka kauneudellaan kaikki lumoaa?",
             "&nbsp;",
             "Keitä ne on, ne asteriskit,",
             "&nbsp;",
-            "Agoran asteriskimiehet,",
+            "Agoran riskimiehet,",
             "&nbsp;",
             "jotka tietokoneet tieltänsä kumoaa?",
             "&nbsp;",
@@ -356,6 +359,7 @@
         "title": "Bussikuski"
     },
     {
+        "metadata": ["(Säv. Mozartin 40. sinfonia)"],
         "lyrics": [
             "Oo, Carillo, Carillo, Carillo,",
             "siinä maistuvi mansikkahillo.",
@@ -381,17 +385,17 @@
     {
         "lyrics": [
             "SING",
-            "Yksi pieni elefantti marssi näin,",
-            "aurinkoista tietä eteenpäin",
-            "Koska matka oli hauska niin,",
-            "pyysi hän mukaan yhden toverin",
+            "        Yksi pieni elefantti marssi näin,",
+            "        aurinkoista tietä eteenpäin",
+            "        Koska matka oli hauska niin,",
+            "        pyysi hän mukaan yhden toverin",
             "N := 2;",
             "REPEAT",
-            "SING",
-            "N pientä elefanttia marssi näin,",
-            "aurinkoista tietä eteenpäin",
-            "Koska matka oli hauska niin,",
-            "pyysivät he mukaan yhden toverin",
+            "        SING",
+            "                N pientä elefanttia marssi näin,",
+            "                aurinkoista tietä eteenpäin",
+            "                Koska matka oli hauska niin,",
+            "                pyysivät he mukaan yhden toverin",
             ":= N + 1;",
             "UNTIL N = 25 OR BLACKOUT = TRUE;"
         ],
@@ -483,7 +487,7 @@
             "&nbsp;",
             "Mä laulan silloin dirlandaa..."
         ],
-        "number": "414",
+        "number": "415",
         "title": "Dirlandaa"
     },
     {
@@ -662,43 +666,15 @@
         ],
         "lyrics": [
             "Helan så ensam i magen gick,",
-            "Undrade varför ej sällskap han ?ck.",
+            "Undrade varför ej sällskap han fick.",
             "Mor lilla, säg, var är halvan i kväll?",
-            "Skicka den genast hit ner, är du snäll!",
-            "&nbsp;",
-            "SSHV:n ja NESUn kirjoissa",
-            "HELAN RASAT",
-            "Melodia Längtan till landet",
-            "&nbsp;",
-            "Helan rasat ner i våra magar,",
-            "skvalpar nu mot botten mol allen.",
-            "I sin ensamhet den bittert klagar:",
-            "“Det är inte gott att vara en.”",
-            "Snart är halvan här den härliga supen,",
-            "alkoholiskt ren och silverklar,",
-            "dansar som en vårbäck genom strupen.",
-            "Hamnar?",
-            "Plask!",
-            "I helans boudoir!",
-            "&nbsp;",
-            "KK:n kirjassa",
-            "&nbsp;",
-            "Helan gick i vänstra foten ",
-            "Bom faderia, bom faderalla",
-            "Gudskelov så vet jag boten",
-            "Bom faderi, faderallanlej",
-            "Hugg i!",
-            "Och dra!",
-            "På brännvin blir man aldrig mätt",
-            "Bom faderi, faderallanlej",
-            "&nbsp;",
-            "På brännvin blir man aldrig mätt",
-            "Bom faderi, faderallanlej"
+            "Skicka den genast hit ner, är du snäll!"
         ],
         "number": "602",
         "title": "Halvan"
     },
     {
+        "metadata":["(Säv. Stenka Rasin)"],
         "lyrics": [
             "Katon rajas kulkee hauki,",
             "pahaa taitaa tarkoittaa.",
@@ -768,7 +744,7 @@
             "Sjung hopp falderallan lej!"
         ],
         "number": "601",
-        "title": "Helan går"
+        "title": "Helan"
     },
     {
         "lyrics": [
@@ -803,7 +779,7 @@
             "Saavu ei koskaan tällaista iltaa.s",
             "Ei koskaan!"
         ],
-        "number": "415",
+        "number": "416",
         "title": "Hopeinen kuu"
     },
     {
@@ -1056,15 +1032,15 @@
             "Ja eritellä mielessään,",
             "miksi kuviot on pielessään.",
             "&nbsp;",
-            "KERTO:",
-            "Kun sitä tuskin edes",
-            "voi aavistaa unissaan",
-            "kuka saa ja kenelle annetaan,",
-            "ja miten raukkamaisesti onnen anti täällä jaetaan.",
-            "Se vituttaa ei saa",
-            "sut vaikka kantapaikasta kannetaan.",
-            "Ulos asti rauhoittumaan,",
-            "kun hakemalla syitä haetaan.",
+            "        KERTO:",
+            "        Kun sitä tuskin edes",
+            "        voi aavistaa unissaan",
+            "        kuka saa ja kenelle annetaan,",
+            "        ja miten raukkamaisesti onnen anti täällä jaetaan.",
+            "        Se vituttaa ei saa",
+            "        sut vaikka kantapaikasta kannetaan.",
+            "        Ulos asti rauhoittumaan,",
+            "        kun hakemalla syitä haetaan.",
             "&nbsp;",
             "Se luoti tuli oviaukosta,",
             "ohiajavasta autosta.",
@@ -1091,7 +1067,7 @@
             "Vastaantulijoiden kaistalla",
             "on vittumaista luistella.",
             "&nbsp;",
-            "KERTO",
+            "        KERTO",
             "&nbsp;",
             "Mutta mitään älä tunnusta.",
             "Älä kerro edes vauvasta.",
@@ -1105,7 +1081,7 @@
             "&nbsp;",
             "Itkisitkö onnesta."
         ],
-        "number": "409",
+        "number": "410",
         "title": "Itkisitkö onnesta"
     },
     {
@@ -1413,6 +1389,7 @@
         "title": "Kaks kisälliä"
     },
     {
+        "metadata": ["(Säv. Kauan)"],
         "lyrics": [
             "Aina kun iltaisin mä opiskelen, ",
             "mun mieli tekee niin - kaljaa. ",
@@ -1633,6 +1610,7 @@
         "title": "Ko-ko-ko-koskenkorvaa"
     },
     {
+        "metadata": ["(Säv. Lohikäärme Puff)"],
         "lyrics": [
             "Koff on mallasjuoma niin huurteinen.",
             "Se lasissani vaahtoaa",
@@ -1679,10 +1657,40 @@
             "&nbsp;",
             "Koodaa taikka kuole..."
         ],
+        "number": "109",
+        "title": "Koodaa tai kuole"
+    },
+    {
+        "metadata": [
+            "(säv. Kullan ylistys)"
+        ],
+        "lyrics": [
+            ":,: Minun juomani Kossu on,",
+            "vaikk’ on viljaviinaa. :,:",
+            ":,: Hei luulia illallaa, vaikk’ on viljaviinaa. :,:",
+            "&nbsp;",
+            ":,: Silmät siit saan punaiset",
+            "sekä kieronlaiset. :,:",
+            ":,: Hei luulia illalla sekä kieronlaiset. :,:",
+            "&nbsp;",
+            ":,: Kun minä juon sitä markkinoilla",
+            "niin hevosetkin nauraa. :,:",
+            "Hei luulia illalla hevosetkin nauraa. Hei luulia",
+            "hah-hah-haa! - hevosetkin nauraa.",
+            "&nbsp;",
+            ":,: Kun minä menen kapakkaan,",
+            "niin portsaritkin nauraa. :,:",
+            ":,: Hei luulia illalla portsaritkin nauraa. :,:",
+            "&nbsp;",
+            ":,: Mull’ on räkä poskella",
+            "sekä turpa täynnä. :,:",
+            ":,: Hei luulia illalla sekä turpa täynnä. :,:"
+        ],
         "number": "702",
         "title": "Kossun ylistys"
     },
     {
+        "metadata": ["(Säv. Imperial March)"],
         "lyrics": [
             "Kraa-kraa-kraa-kraa-pulaa kraa-pulaa.",
             "Kraa-kraa-kraa-kraa-pulaa kraa-pulaa.",
@@ -1717,17 +1725,11 @@
     {
         "lyrics": [
             ":,: Kuka helvetti heitti kiven mun viinapulloon? :,: x4",
-            "&nbsp;",
             ":,: Vem i helvete kastar sten på min flaska brännvin? :,: x4",
-            "&nbsp;",
             ":,: Who the hell threw a rolling stone to my whisky bottle? :,: x4",
-            "&nbsp;",
             ":,: Kes kuurats ku viskas kive minu viinapudelisse? :,: x4",
-            "&nbsp;",
             ":,: Saku Sammakko heitti kiven mun viinapulloon. :,: x4",
-            "&nbsp;",
             ":,: Saku Sammakkoo on niin helvetin helppo syyttää. :,: x4",
-            "&nbsp;",
             ":,: Kuka helvetti heitti minutkin viinapulloon? :,: x4"
         ],
         "number": "707",
@@ -2016,41 +2018,7 @@
             "När man lilla tersen har fått,",
             "smakar den lilla kvarten så gott,",
             "och den smaken har vi aldrig försmått.",
-            "Hipp, hipp hurra för kvarten!",
-            "&nbsp;",
-            "",
-            "NESUn kirjasta ",
-            "&nbsp;",
-            "Att dricka brännvin är sed,",
-            "som inget har oss lärt.",
-            "Från början vi ej kunde,",
-            "men det var blott temporärt.",
-            "Sen lärde vi oss själva",
-            "och det var nog värt besvä´t!",
-            "Rattataa!",
-            "Så tar vi oss en tuting.",
-            "Rattataa!",
-            "Med mycket brännvin i.",
-            "Rattataa! Rattataa!",
-            "Dricka brännvin gillar ja´",
-            "för jag blir så full och gla´",
-            "&nbsp;",
-            "Rattataa…",
-            "&nbsp;",
-            "",
-            "SSHV:n kirjasta",
-            "IMBELUPET",
-            "KK:n kirjasta KVARTEN",
-            "Melodia: Kors på Idas grav",
-            "&nbsp;",
-            "Imbelupet glaset står på bräcklig fot,",
-            "kalla pilsnerflaskor lutar sig därmot!",
-            "Men där nere   miserere -",
-            "i min mage tom och svart",
-            "sitter djävulen och väntar på en quart!",
-            "&nbsp;",
-            "",
-            ""
+            "Hipp, hipp hurra för kvarten!"
         ],
         "number": "604",
         "title": "Kvarten"
@@ -2061,14 +2029,7 @@
             "Finlands djupa skogar där får man supa gratis,",
             "bom faderi, där får man supa gratis.",
             "Där blandar dom bark i både vete och potatis,",
-            "bom faderi och faderallanlej.",
-            "&nbsp;",
-            "NESUn kirjast (Löytyy myös Turusta KK:lta): ",
-            "Till supen så tager man sill, sill, sill",
-            "men också anjovis man vill, vill, vill",
-            "Och om man är oviss om sillen är anjovis",
-            "så tar man några supar till, till, till",
-            ""
+            "bom faderi och faderallanlej."
         ],
         "number": "605",
         "title": "Kvinten"
@@ -2212,7 +2173,8 @@
     },
     {
         "metadata": [
-            "(Säv. Volgan lautturi)"
+            "(Säv. Volgan lautturi)",
+            "Repeat Ad Infinitum"
         ],
         "lyrics": [
             "",
@@ -2226,10 +2188,8 @@
         "title": "Lissää viinaa, silmät liikkuu"
     },
     {
+        "metadata": ["(Säv. Karjalan Katjuusa)"],
         "lyrics": [
-            "(Säv. Stenka rasini)",
-            "(Myös Sörnai gusha)",
-            "&nbsp;",
             "Liten Jumbo flyger över Sovjet,",
             "Mig 23 går upp och skjuter ner",
             ":,: Liten Jumbo störtar ner i havet,",
@@ -2269,6 +2229,7 @@
         "title": "Liten Jumbo"
     },
     {
+        "metadata":["(Säv. Kasakkapartio)"],
         "lyrics": [
             "Livet är härligt,",
             "Tavaritj vårt liv är härligt.",
@@ -2341,11 +2302,11 @@
             "’Näin tehdään helppo makaroni laatikko",
             "ja alotetaan sillä et pistetään jauhelihat ruskistumaan.’",
             "",
-            "KERTO:",
-            "Today I went to gaubs for sips and dips.",
-            "Taffel sips + dips and Coke is lims.",
-            "In the gaubs I went to ready food partenings.",
-            "I tooked with me macaron boxenings.",
+            "      KERTO:",
+            "      Today I went to gaubs for sips and dips.",
+            "      Taffel sips + dips and Coke is lims.",
+            "      In the gaubs I went to ready food partenings.",
+            "      I tooked with me macaron boxenings.",
             "&nbsp;",
             "Macaron box,",
             "is my favorite food",
@@ -2356,7 +2317,7 @@
             "In my car...",
             "...I have a back spoiler",
             "&nbsp;",
-            "KERTO",
+            "      KERTO",
             "&nbsp;",
             "That dog älähts,",
             "to which the kalicca calahts",
@@ -2375,8 +2336,8 @@
             "From my leibs,",
             "I make a fucking good sandwich.",
             "&nbsp;",
-            "",
-            "KERTO"
+            "      KERTO",
+            "&nbsp;"
         ],
         "number": "904",
         "title": "Macaron Box"
@@ -2455,6 +2416,7 @@
         "title": "Minnet - Minne"
     },
     {
+        "metadata": ["(Säv. Vanhoja poikia viiksekkäitä)"],
         "lyrics": [
             "Saimaan saaressa pikkuinen torppa,",
             "uhraa portailla kultisti Miikkulainen,",
@@ -2566,7 +2528,7 @@
             "Ja kiinni pysyvät työpaikan portit.",
             "Ikuisista riskeistä ne laulavat."
         ],
-        "number": "405",
+        "number": "406",
         "title": "Murheellisten bittien maa"
     },
     {
@@ -2612,7 +2574,7 @@
             "ja kiinni pysyvät taivaan portit.",
             "Einari Epätoivosta ne kertovat."
         ],
-        "number": "404",
+        "number": "405",
         "title": "Murheellisten laulujen maa"
     },
     {
@@ -2680,7 +2642,7 @@
             "niin se antaa nelosen,",
             "vedä kovaa niin antaa vitosen. :,:"
         ],
-        "number": "803",
+        "number": "804",
         "title": "Naidaan lampaita"
     },
     {
@@ -2818,6 +2780,7 @@
         "title": "No onkos tullut kesä"
     },
     {
+        "metadata": ["(Säv. In the Navy)"],
         "lyrics": [
             "Oispa kaljaa",
             "sillä kivan kännin saa.",
@@ -2847,6 +2810,7 @@
         "title": "Oispa"
     },
     {
+        "metadata": ["(Säv. Jaakko kulta)"],
         "lyrics": [
             "Lapin Kulta, Lapin Kulta",
             "Karjala, Karjala",
@@ -3047,6 +3011,7 @@
         "title": "Petteri Punakuono"
     },
     {
+        "metadata": ["(Säv. Pienet sammakot)"],
         "lyrics": [
             ":,: Pienet konjakit, pienet konjakit,",
             "ne lystikkäitä on. :,:",
@@ -3181,7 +3146,7 @@
             "sun täytyis tehdä jotain järkevää.",
             "Ja lapselliset leikkis lopettaa. :,:"
         ],
-        "number": "406",
+        "number": "407",
         "title": "Piltti"
     },
     {
@@ -3224,7 +3189,7 @@
             "&nbsp;",
             ":,: Siellä juotiin... :,:"
         ],
-        "number": "804",
+        "number": "803",
         "title": "Pohjolan pidot"
     },
     {
@@ -3277,7 +3242,7 @@
             "&nbsp;",
             " "
         ],
-        "number": "413",
+        "number": "414",
         "title": "Poliisi pamputtaa taas"
     },
     {
@@ -3388,7 +3353,7 @@
             "lasit täynnänsä punssii! :,:"
         ],
         "number": "303",
-        "title": "Puurolaulu"
+        "title": "Joulu on taas"
     },
     {
         "lyrics": [
@@ -3623,6 +3588,7 @@
         "title": "Ruotsalainen juomalaulu"
     },
     {
+        "metadata": ["(Säv. Kehruuvalssi)"],
         "lyrics": [
             "Ryyppää, ryyppää, ryyppää vaan,",
             "huomenna on sulla krapula.",
@@ -3789,7 +3755,7 @@
             "who|grep awake",
             "who|egrep 'bad|good'",
             "for (goodness sake) {",
-            "be good",
+            "        be good",
             "}"
         ],
         "number": "311",
@@ -3996,10 +3962,11 @@
             "&nbsp;",
             "Sinä lähdit pois..."
         ],
-        "number": "407",
+        "number": "408",
         "title": "Sinä lähdit pois"
     },
     {
+        "metadata": ["(Säv. Boom Kah)"],
         "lyrics": [
             "Krapula on jo ohi kohta,",
             "joten skippaa se kotisohva",
@@ -4132,6 +4099,36 @@
     },
     {
         "lyrics": [
+            "Katu täytyy askelista",
+            "elämä on kuolemista",
+            "pane käsi käteen ollaan hiljaa",
+            "pyydä minut aamuteelle",
+            "anna vettä kuihtuneelle",
+            "nyt on elokuu ja minä olen viljaa",
+            "En ilosta itke en surusta itke, jos itken",
+            "niin itken muuten vaan",
+            "ja muualla oon, ennen kuin huomaatkaan",
+            "Häntä rakastin paljon",
+            "sua rakastan joskus enemmän",
+            "ole mulle vähän aikaa hän",
+            "Ota minut sinun uniin",
+            "vaikka nousen toisiin juniin",
+            "nyt on lokakuu ja minusta näkee sen",
+            "Kun tulen kiinni sinuun",
+            "jumalatkin uskoo minuun",
+            "vaikka itse aina usko en",
+            "En ilosta itke en surusta itke, jos itken",
+            "niin itken muuten vaan",
+            "ja muualla oon, ennen kuin huomaatkaan",
+            "Häntä rakastin paljon",
+            "sua rakastan ehkä enemmän",
+            "ole mulle vähän aikaa hän"
+        ],
+        "number": "409",
+        "title": "Syksyn sävel"
+    },
+    {
+        "lyrics": [
             "Ja niin joulu joutui jo taas pohjolaan",
             "Joulu joutui jo rintoihinkin",
             "Ja kuuset ne kirkkaasti luo loistoaan",
@@ -4163,6 +4160,7 @@
         "title": "Sylvian joululaulu"
     },
     {
+        "metadata": ["(Säv. Yesterday)"],
         "lyrics": [
             "Syphilis,",
             "it just started with a simple kiss.",
@@ -4323,19 +4321,7 @@
             "Ack lilla tersen,",
             "ack lilla hjärtevännen.",
             "Kommer du ej snart.",
-            "Jo, jag kommer strax!",
-            "&nbsp;",
-            "NESU:n kirjassa lisäksi säkeistö suomeks:",
-            "&nbsp;",
-            "Kaukana hän viipyy",
-            "ei kuulu tulevaksi,",
-            "vatsassamme ryyppyjä vasta on kaksi.",
-            "Kolmas olis vuorossa,",
-            "huutakaamme kuorossa:",
-            "Kun et tule jo, kun et tule jo.",
-            "&nbsp;",
-            "",
-            ""
+            "Jo, jag kommer strax!"
         ],
         "number": "603",
         "title": "Tersen"
@@ -4372,6 +4358,7 @@
         "title": "Tonttujen jouluyö"
     },
     {
+        "metadata": ["(Säv. Mandoliinimies)"],
         "lyrics": [
             "Tyttö näki sillalta kuinka mustaa",
             "verta valui ranteesta rotvalliin.",
@@ -4463,43 +4450,27 @@
         "title": "Tämän talon onneksi"
     },
     {
+        "metadata": ["(Säv.  Joulu on taas)"],
         "lyrics": [
             ":,: Tänään otetaan, tänään otetaan",
-            "&nbsp;",
             "helevetin paljon viinaa! :,:",
-            "&nbsp;",
             ":,: Huomenna on, huomenna on",
-            "&nbsp;",
             "helevetin kova krapula. :,:",
             "&nbsp;",
-            " ",
-            "&nbsp;",
             ":,: I dag ska vi ta, i dag ska vi ta",
-            "&nbsp;",
             "helvetes mycket brännvin! :,:",
-            "&nbsp;",
             ":,: I morgon ska vi ha, i morgon ska vi ha",
-            "&nbsp;",
             "helvetin kova krapula! :,:",
             "&nbsp;",
-            " ",
             "&nbsp;",
             ":,: Tänä võtame, tänä võtame",
-            "&nbsp;",
             "kuradima palju viina. :,:",
-            "&nbsp;",
             ":,: Homme meil on, homme meil on",
-            "&nbsp;",
             "kuradima kova pohmakas. :,:",
             "&nbsp;",
-            "",
-            "&nbsp;",
             ":,: Tonight we shall get, tonight we shall get",
-            "&nbsp;",
             "Absolutely fucking hammered :,:",
-            "&nbsp;",
             ":,: Tomorrow we shall have, tomorrow we shall have",
-            "&nbsp;",
             "Hangover beyond reason :,:"
         ],
         "number": "624",
@@ -4633,7 +4604,7 @@
             "&nbsp;",
             ""
         ],
-        "number": "410",
+        "number": "411",
         "title": "Unelmia ja toimistohommia"
     },
     {
@@ -4759,6 +4730,7 @@
         "title": "Vesilaulu"
     },
     {
+        "metadata": ["(Säv. Kapteeni katsoi horisonttiin)"],
         "lyrics": [
             "Pois se meistä, että täällä maisteltais'",
             "noita pahan tuomia alkoholijuomia.",
@@ -4823,10 +4795,11 @@
             "&nbsp;",
             "Taas nukun..."
         ],
-        "number": "411",
+        "number": "412",
         "title": "Viidestoista vuosi"
     },
     {
+        "metadata": ["(Säv. When Johnny Comes Marching Home)"],
         "lyrics": [
             "Kun viikinkilaulu lauletaan,",
             "hurraa, hurraa.",
@@ -4895,6 +4868,7 @@
         "title": "Vitutuslaulu"
     },
     {
+        "metadata": ["(Säv. Stenka Rasin)"],
         "lyrics": [
             "Vodka, vodka vill jag dricka;",
             "Jag vill äta kaviar,",
@@ -4979,7 +4953,7 @@
             "Volga, Volga, villinä ja vapaana,",
             "sua ei voi vangita, (hahahaha-HEI!) :,:"
         ],
-        "number": "412",
+        "number": "413",
         "title": "Volga"
     },
     {
