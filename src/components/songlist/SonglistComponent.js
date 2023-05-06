@@ -45,7 +45,7 @@ sortSongs(songs){
                                                    this.state.search.toLowerCase() === song.number.substring(0, this.state.search.length).toLowerCase())
     if (this.state.filter !== "Kaikki"){
       let categoryNumber = this.state.categories.find(category => category.category === this.state.filter).number
-      filtered = filtered.filter(song => song.number.length == 4 ? song.number.substring(0,2) === categoryNumber : song.number.substring(0,1) === categoryNumber)
+      filtered = filtered.filter(song => song.number.length === 4 ? song.number.substring(0,2) === categoryNumber : song.number.substring(0,1) === categoryNumber)
     }
     return filtered
   }
